@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#000000;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #ffffffff;
+  margin: 5vh auto;
+  font-size: calc(5vw + 20px);
+  text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+
+.container {
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  gap: 2px;
+}
+
+.key {
+  display: flex;
+  width: 100px;
+  height: 430px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: white;
+  font-size: calc(3vw + 20px);
+  border: 3px solid white;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-bottom-left-radius: 15px;  
+  border-bottom-right-radius: 15px; 
+  animation:none;
+}
+
+.tela{
+  position:relative;
+}
+
+.botao{
+  position:absolute;
+  z-index: 4;
+  background-color:rgb(12, 12, 12);
+  height: 300px;
+  width: 70px;   
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-bottom-left-radius: 15px;  
+  border-bottom-right-radius: 15px; 
+}
+
+[E]{
+  left:8rem; 
+}
+
+[R]{
+  left:235px; 
+}
+
+[T]{
+  left:435px; 
+}
+
+[Y]{
+  left:545px; 
+}
+
+[U]{
+  left:650px; 
+}
+
+[I]{
+  left:850px; 
+}
+
+[O]{
+  left:950px; 
+}
+
+[P]{
+  left:1155px; 
+}
+
+.key:hover {
+  border-color: grey;
+  box-shadow: 0 0 50px #ffffff;
+}
+
+.active {  
+  transform: scale(0.99);
+  border-color: grey;
+  box-shadow: 0 0 50px #ffffff;
+}
+
+.header{
+  background-color:#ffffff;
+  color:#000000;
+  padding: 2px 2px;
+  font-size: 15px;
+  text-align: center;  
+}
